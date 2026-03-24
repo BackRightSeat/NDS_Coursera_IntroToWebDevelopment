@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet">
+    <script src="script.js" defer></script>
+    <div class="hamburger" onclick="document.querySelector('nav').classList.toggle('open')">
+    ☰
+</div>
+
+    <!-- Accessibility-friendly font choices -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; /* Highly readable, widely supported */
+            background-color: #ffffff;
+            color: #1a1a1a; /* Strong contrast on white background */
+            line-height: 1.6;
+        }
+
+        a, button {
+            cursor: pointer;
+        }
+
+        a:focus, button:focus, input:focus, textarea:focus {
+            outline: 3px solid #005fcc; /* High-contrast focus indicator */
+            outline-offset: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #005fcc; /* Meets WCAG contrast on white */
+        }
+
+        nav a:hover, nav a:focus {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER WITH NAVIGATION -->
+    <header>
+        <h1>My Portfolio</h1>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="project-filters">
+    <button data-filter="all">All</button>
+    <button data-filter="web">Web</button>
+    <button data-filter="mobile">Mobile</button>
+    <button data-filter="design">Design</button>
+</div>
+
+    </header>
+
+    <main>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>
+                biggest of dawgs
+            </p>
+        </section>
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <article>
+                <h3>Project One</h3>
+                <figure>
+                    <img src="placeholder1.jpg" alt="Screenshot of Project One interface">
+                    <figcaption>A brief description of Project One goes here.</figcaption>
+                </figure>
+                <p>
+                    This project showcases my ability to structure applications and create intuitive user experiences.
+                </p>
+            </article>
+
+            <article>
+                <h3>Project Two</h3>
+                <figure>
+                    <img src="placeholder2.jpg" alt="Preview of Project Two dashboard layout">
+                    <figcaption>A brief description of Project Two goes here.</figcaption>
+                </figure>
+                <p>
+                    A demonstration of my work with modern frameworks and clean component‑based architecture.
+                </p>
+            </article>
+
+            <article>
+                <h3>Project Three</h3>
+                <figure>
+                    <img src="placeholder3.jpg" alt="Image showing Project Three's main feature">
+                    <figcaption>A brief description of Project Three goes here.</figcaption>
+                </figure>
+                <p>
+                    This project highlights my problem‑solving skills and attention to detail.
